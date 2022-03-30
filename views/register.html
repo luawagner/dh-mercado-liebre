@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--Fuente Roboto-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap" rel="stylesheet"> 
+<!--Fontawesome-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+<!--Normalize-->
+<link href="/css/normalize.css" rel="stylesheet"> 
+<!--Estilos-->   
+<link rel="stylesheet" href="/css/register.css">
+<link rel="stylesheet" href="/css/theme.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-main">
+        <div class="top-bar">      
+          <a  id="logo" href="/"><img   src="/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>  
+          
+          
+            <form id="search-form" action="">
+               <input type="search" placeholder="Buscar productos, marcas y más...">
+               <button type="submit"><i class="fas fa-search"></i></button>
+           </form>
+                
+               <h5  class="copy-header text-center"> <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito. </h5>
+           
+            </div> 
+            
+             <nav>
+                <ul>
+                        <li><a href="">Ofertas</a></li>
+                        <li><a href="">Tiendas Oficiales</a></li>
+                        <li><a href="">Vender</a></li>
+                        <li><a href="">Ayuda</a></li>
+                 </ul>   
+                  <ul>
+                        <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    
+                </ul>
+            </nav>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+           </header>
+          
+        
+   
+   <main class="register">
+    <form action="/register" method="POST">
+  <div>
+      <label class="hidden" for="name">Nombre y apellido:</label>
+      <input class="input-box"  type="text" name="fullname" id="fullname" placeholder="Nombre y apellido">
+  </div>
+  <div>
+      <label class="hidden" for="usuario">Nombre de usuario:</label>
+      <input class="input-box" type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+  </div>
+  <div>
+      <label class="hidden" for="email">Email:</label>
+      <input class="input-box" type="email" name="email" id="email" placeholder="E-mail">
+  </div>
+  <div>
+      <label class="block"  for="fecha" ><p class="titulos-formulario">Fecha de Nacimiento:</p></label>
+      <input class="input-box"  type="date" name="fecha" id="fecha">
+  </div>
+  <div>
+      <label class="hidden" for="domicilio">Domicilio:</label>
+      <input class="input-box" type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+  </div>
+  <div> 
+      <label for="perfil"><p class="titulos-formulario">Perfil de usuario:</p></label>
+      
+      <div class="radio-list">
+      <input type="radio" name="perfil" value="Comprador" id="buyerProfile">
+      <label for="buyerProfile">Comprador</label>
+        <input type="radio" name="perfil" value="Vendedor" id="sellerProfile">
+      <label for="sellerProfile">Vendedor</label>
+    
+    </div>
+  </div>
+  <div>
+    <label for="categorias"><p class="titulos-formulario">Intereses:</p></label>
+    <div class="checks-intereses">
+        <div>
+    <input type="checkbox" name="categorias" id="electro" value="Electro">
+    <label for="electro">Electro</label>
+</div>
+<div>
+    <input type="checkbox" name="categorias" id="moda" value="Moda">
+    <label for="moda">Moda</label>
+</div>
+<div>
+    <input type="checkbox" name="categorias" id="hogar" value="Hogar">
+    <label for="hogar">Hogar</label>
+</div>
+<div>
+    <input type="checkbox" name="categorias" id="jugueteria" value="Juguetería">
+    <label for="jugueteria">Juguetería</label>
+</div>
+<div>
+    <input type="checkbox" name="categorias" id="vida-sana" value="Vida sana">
+    <label for="vida-sana">Vida sana</label>
+</div>
+
+
+</div>
+<div>
+    <label for="foto"><p class="titulos-formulario">Adjuntar foto:</p></label>
+    <input type="file" name="foto" id="foto" >
+</div>
+<div class="passwords">
+
+    <label class="hidden" for="password" >Ingresar contraseña:</label>
+    <input class="input-box" type="password" name="password" id="password" placeholder="Ingresar contraseña">
+     <label class="hidden" for="password" >Confirmar contraseña:</label>
+    <input class="input-box" type="password" name="password" id="password" placeholder="Confirmar contraseña">
+
+</div>
+
+ <button class="enviar"type="submit"><a href="/">Enviar!</a></button>
+
+</div>
+</form>
+</main>
+
+<footer>
+    <div class="text-center color-gris-oscuro">
+        <i class="fas fa-credit-card color-azul"></i>
+        <h5 class="titulos-footer">Pagá con tarjeta o en efectivo</h5>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+    </div>
+    <div class="text-center color-gris-oscuro">
+        <i class="fas fa-gift color-azul"></i>
+        <h5 class="titulos-footer">Envío gratis desde $ 2.500</h5>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+    </div>
+    <div class="text-center color-gris-oscuro">
+        <i class="fas fa-user-shield color-azul "></i>
+        <h5 class="titulos-footer">Seguridad, de principio a fin</h5>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+    </div>
+    <p class="cuerpo-texto color-gris-oscuro">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+.register {
+  font-size: 14px;
+    margin-top: 180px;
+    width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.titulos-formulario{
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.radio-list{
+  width: 60%;
+}
+.checks-intereses div input{
+  margin: 12px;
+}
+.hidden {
+    display: none;
+  }
+  .input-box{
+    width: 100%;
+    padding: 12px ;
+    border: none;
+    border-radius: 6px;
+    
+  }
+
+  form div{
+    margin:16px 0;
+   
+  }
+  
+  .passwords {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .passwords input{
+    margin-bottom: 20px;
+  }
+  
+  
+ .enviar {
+   width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border:none;
+    background-color: #1259c3;
+    color: white;
+  }
+  .enviar:hover{
+    background-color: #0022AA;
+  }
+
+  @media (min-width: 768px) {
+    .register {
+      margin-top:220px;
+
+    }
+    .radio-list{
+      width: 30%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .radio-list{
+      width: 20%;
+    }
+    .checks-intereses{
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,296 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bg-main {
+    background-color:#EAC926;
+}
+.color-gris-oscuro{
+    color: #666666
+}
+.color-verde-claro{
+    color:#39b54a;
+}
+
+.color-azul{
+   color: #1259c3
+}
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-right: auto;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color:white;
+    text-align: center;
+    padding: 4px;
+  
+}
+
+body {
+    
+   background-color: #ebebed;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+li {
+    list-style: none;  
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.cuerpo-texto {
+    font-size: 12px;
+}
+.titulares {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.precios {
+    font-size: 18px;
+}
+.descuentos {
+    font-size: 16px;
+}
+.descripciones {
+font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+z-index: 10;
+}
+#logo{
+    width: 50%;
+    
+}
+
+
+
+.separador {
+border-top: 1px solid #ebebed;
+padding: 10px;
+}
+.product-card {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-bottom: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+nav{
+    display: none;
+
+}
+
+.top-bar{
+    
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#search-form{
+    height: 30px;
+width: 50%;
+padding: 10px;
+display: flex;
+position: relative;
+}
+#search-form input{
+    width: 100%;
+    font-size: 14px;
+    padding-left:10px;
+    padding-right: 30px;
+    height: 25px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-form button {
+    position: absolute;
+    right: 18px;
+    top:13px;
+    border:none;
+    border-radius: 5px;
+background-color: white;
+color:#666666;
+
+}
+.top-bar h4{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+.copy-header{
+    width: 100%;
+    justify-content: center;
+    margin-top:15px
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin:auto; */
+    padding: 30px;;
+    background-color: white;
+}
+
+footer div{
+    margin: 20px 0;
+}
+
+.titulos-footer{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer div i{
+font-size: 35px;
+margin:20px 0;
+}
+.width-100{
+    width: 100%;
+}
+.radio-list{
+    display: flex;
+justify-content: space-between;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    .product-card{
+        width: calc(50% - 16px);
+    }
+
+  .product-card:hover .description{
+    display: block;
+  }
+  .product-card:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .delivery-icon{
+      transition: transform 0.5s;
+  }
+  .product-card:hover .delivery-icon {
+      transform: rotate(-90deg);
+  }
+.top-bar{
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 95%;
+}
+.copy-header {
+    font-size: 12px;
+    width: 40%;
+    margin: 0 auto;
+}
+main{
+    margin-top: 30px;
+}
+nav{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    font-size: 12px;
+}
+.burger-menu {
+    display: none;
+}
+footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 350px; */
+    align-items: flex-start;
+}
+footer div {
+    width: 33%;
+    padding: 0 20px;
+   
+}
+footer p{
+    width: 100%;
+    text-align: center;
+}
+.top-bar{
+    width: 100%;
+   
+}
+#search-form{
+    width: 40%;
+    padding:0 20px;
+}
+#search-form input{
+    height: 25px;
+    font-size: 12px;
+}
+#search-form button {
+    top: 4px;
+    right: 27px;
+}
+#logo{
+    width:35% ;
+}
+
+}
+
+
+@media (min-width: 1200px){
+    .description {
+        display: none;
+    }
+    .product-card{
+        box-shadow: none;
+        width: calc(25% - 16px);
+  }
+
+nav ul{
+    font-size: 14px;
+    width:30%;
+
+}
+.copy-header{
+    width: 33%;
+}
+
+#search-form {
+    width: 33%;
+    padding: 0 20px;
+}
+
+#logo{
+    width: 33%;
+    padding:0 40px;
+}
+}
